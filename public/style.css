@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  margin: 0;
+
+  /* Fundo com imagem + gradiente vermelho escuro transparente */
+  background-image:
+    radial-gradient(circle, rgba(255, 0, 0, 0.8), rgba(83, 1, 1, 0.8)),
+    url("testefundo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form {
+  background-color: rgba(0, 0, 0, 0.6); /* fundo preto transparente para o form */
+  padding: 30px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 0 10px darkred;
+}
+
+input {
+  padding: 10px;
+  margin: 10px 0;
+  width: 220px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  color: white;          /* texto branco para contrastar */
+  background-color: rgba(255, 255, 255, 0.2); /* fundo leve transparente */
+}
+
+input::placeholder {
+  color: #eee;
+}
+
+button {
+  padding: 12px 25px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: darkred;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: left;
+  width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Links dentro de <p> com cor branca e destaque */
+p a {
+  color: white !important;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+p a:hover {
+  color: #ff9999 !important; /* tom suave de rosa para hover */
+}
+
+/* Estilo para título */
+h2 {
+  margin-bottom: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Tela de senha alterada com sucesso */
+.sucesso-container {
+  background-color: rgba(0, 100, 0, 0.8);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px limegreen;
+  color: white;
+  font-size: 20px;
+  max-width: 400px;
+  margin: 100px auto;
+  font-weight: bold;
+}
+
+.sucesso-container a {
+  display: inline-block;
+  margin-top: 15px;
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.sucesso-container a:hover {
+  color: #ccffcc;
+}

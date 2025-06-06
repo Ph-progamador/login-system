@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Agendamento de Treino - Fit Manager</title>
+  <link rel="stylesheet" href="agendamento.css">
+</head>
+<body>
+    <nav class="navbar">
+  <ul>
+    <li><a href="home.html">Início</a></li>
+    <li><a href="agendamento.html">Agendamento</a></li>
+    <li><a href="financeiro.html">Financeiro</a></li>
+    <li><a href="planos.html">Planos</a></li>
+    <li><a href="index.html">Sair</a></li>
+  </ul>
+</nav>
+  <header>
+    <h1>Agende seu Treino</h1>
+    <p>Escolha o dia, horário e o tipo de treino desejado</p>
+  </header>
+
+  <main>
+    <form class="agendamento-form" action="/agendar" method="POST">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="data">Data:</label>
+      <input type="date" id="data" name="data" required>
+
+      <label for="horario">Horário:</label>
+      <input type="time" id="horario" name="horario" required>
+
+      <label for="tipo">Tipo de Treino:</label>
+      <select id="tipo" name="tipo" required>
+        <option value="musculacao">Musculação</option>
+        <option value="cardio">Cardio</option>
+        <option value="funcional">Funcional</option>
+        <option value="personal">Com Personal</option>
+      </select>
+
+      <button type="submit" class="btn">Agendar</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Fit Manager - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>

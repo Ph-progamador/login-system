@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Confirmar Redefinição</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Confirmar Redefinição de Senha</h2>
+  <form method="POST" action="/confirm-reset">
+    <input type="email" name="email" placeholder="Seu e-mail" required><br>
+    <input type="text" name="code" placeholder="Código recebido" required><br>
+    <input type="password" name="newPassword" placeholder="Nova senha" required><br>
+    <button type="submit">Redefinir</button>
+  </form>
+  <p><a href="/" class="link-destaque">Voltar ao login</a></p>
+</body>
+</html>

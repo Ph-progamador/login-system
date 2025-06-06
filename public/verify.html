@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Verificação de Email</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Confirme seu Email</h2>
+  <form method="POST" action="/verify">
+    <label for="email">Email:</label><br />
+    <input type="email" name="email" id="email" required /><br /><br />
+    <label for="code">Código de Verificação:</label><br />
+    <input type="text" name="code" id="code" required /><br /><br />
+    <button type="submit">Verificar</button>
+  </form>
+  <p><a href="/" class="link-destaque">Voltar ao login</a></p>
+</body>
+</html>
